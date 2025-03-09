@@ -1,38 +1,74 @@
-.App {
+/* 🌟 Sexy Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+/* 🚀 Sexy App Container */
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* 🔥 Animated Logo */
+.App-logo {
+  height: 40vmin;
+  animation: App-logo-spin infinite 10s linear;
+  filter: drop-shadow(0 0 10px #ff007f);
 }
 
+/* 🎭 Keyframes for Logo Spin */
 @keyframes App-logo-spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
+  }
+}
+
+/* 🌈 Sexy Header */
+.App-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 30px rgba(255, 0, 127, 0.3);
+}
+
+/* 💡 Sexy Links */
+.App-link {
+  color: #ff007f;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #ffdb58;
+  text-shadow: 0px 0px 10px #ffdb58;
+}
+
+/* 📱 Responsive Neon Glow */
+@media (max-width: 768px) {
+  .App-header {
+    min-width: 90%;
   }
 }
